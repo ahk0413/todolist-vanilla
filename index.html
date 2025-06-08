@@ -6,7 +6,7 @@
   <title>Todolist</title>
   <link rel="stylesheet" href="./reset.css" />
   <link rel="stylesheet" href="./style.css" />
-  <script src="./script.js" defer></script>
+  <script type="module" src="./script.js"></script>
 </head>
 <body>
   <div class="todo_wrap">
@@ -25,18 +25,13 @@
       <div class="list_wrap">
         <ul id="todoList" class="todo_list">
           <!-- JS로 li 항목이 추가될 예정 : html 삭제 필요-->
-          <li>
-            <label class="todo_label">
-              <input type="checkbox" class="todo_chkbox" />
-              <span class="chkmark"></span>
-              <span class="todo_text">ddddddddddddddddddddddddddddddddddddddddddddd</span>
-            </label>
-            <button type="button" class="delete_btn"><span class="blind">삭제</span></button>
-          </li>
         </ul>
       </div>
-
-      <button type="button" id="allDelBtn" class="all_delbtn"><span>전체 삭제</span></button>
+      
+      <footer>
+        <p class="count">해야할 일 : <span class="num">0</span> / <span class="all">0</span></p>
+        <button type="button" id="allDelBtn" class="all_delbtn"><span>전체 삭제</span></button>
+      </footer>
     </div>
   </div>
 </body>
